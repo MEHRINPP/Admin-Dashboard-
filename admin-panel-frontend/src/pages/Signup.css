@@ -1,0 +1,110 @@
+/* Global reset to remove any default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body and html take up full height and width */
+html, body {
+    height: 100%; /* Full height of the page */
+    width: 100%; /* Full width of the page */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color for the full page */
+}
+
+/* Full screen container to center the form */
+.signup-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    background-color: #f5f5f5; /* Light background color for the container */
+    position: absolute; /* Use absolute positioning as fallback */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+/* The form itself */
+.signup-form {
+    background-color: #fff;
+    padding: 50px; /* Larger padding to make it spacious */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Larger max-width for the form */
+    text-align: center;
+    min-width: 350px; /* Ensure it doesn’t get too small */
+}
+
+/* Form heading */
+.signup-form h2 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 30px; /* Increase space under the heading */
+    color: #333;
+}
+
+/* Form layout */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between inputs */
+}
+
+/* Style for inputs */
+.form-input {
+    padding: 15px; /* Increased padding for inputs */
+    font-size: 1.2rem; /* Larger font size for the inputs */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text for contrast */
+    transition: border 0.3s ease;
+}
+
+/* Focus effect on inputs */
+.form-input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    background-color: #f9f9f9; /* Slightly darker background on focus */
+}
+
+/* Button styling */
+.submit-button {
+    padding: 15px; /* Increased padding for the submit button */
+    font-size: 1.2rem; /* Larger button font size */
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button */
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Active effect for button */
+.submit-button:active {
+    background-color: #388e3c;
+}
+
+/* Media queries for responsiveness on small screens */
+@media (max-width: 600px) {
+    .signup-form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .form-input {
+        font-size: 1rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+    }
+}

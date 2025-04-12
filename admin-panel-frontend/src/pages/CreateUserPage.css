@@ -1,0 +1,142 @@
+/* Container for the Create User page */
+.create-user-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Heading style */
+.create-user-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Form container */
+.create-user-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form field group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label style */
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Input field style */
+.form-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (Portrait Mode) */
+@media (max-width: 768px) {
+    .create-user-page {
+        padding: 10px;
+    }
+
+    .create-user-form {
+        padding: 20px;
+        max-width: 90%;  /* Make the form take up more space on smaller screens */
+    }
+
+    .create-user-page h2 {
+        font-size: 1.8rem; /* Slightly smaller heading */
+    }
+
+    .form-group label {
+        font-size: 0.9rem; /* Smaller labels */
+    }
+
+    .form-input {
+        font-size: 0.9rem; /* Slightly smaller input fields */
+    }
+
+    .submit-button {
+        font-size: 0.9rem; /* Smaller button */
+    }
+}
+
+/* Mobile (Portrait Mode) */
+@media (max-width: 480px) {
+    .create-user-page {
+        padding: 5px;
+    }
+
+    .create-user-form {
+        padding: 15px;
+        max-width: 100%;  /* Form takes up the entire screen */
+    }
+
+    .create-user-page h2 {
+        font-size: 1.6rem; /* Even smaller heading */
+    }
+
+    .form-group label {
+        font-size: 0.8rem; /* Smaller labels */
+    }
+
+    .form-input {
+        font-size: 0.8rem; /* Smaller input fields */
+    }
+
+    .submit-button {
+        font-size: 0.8rem; /* Smaller button */
+    }
+}
+
+/* Large screens (like desktop) */
+@media (min-width: 1200px) {
+    .create-user-form {
+        max-width: 600px; /* Increase form width for larger screens */
+    }
+}
